@@ -215,6 +215,15 @@ Navbar
   grid-template-columns: 1fr 1fr;
   align-items: center;
 }
+
+
+  .nav-logo{
+    justify-self: start;
+    width: 20rem;
+  
+   
+  }
+  
 .nav-btn{
   background: transparent;
   border-color: transparent;
@@ -223,9 +232,26 @@ Navbar
   cursor: pointer;
   justify-self: end;
 }
+
+
+/* fixed navbar . On small device the navar will stick to the top  */
+.navbar-fixed{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background: var(--clr-white);
+  z-index: 2;
+  box-shadow: var(--light-shadow);
+}
+
+/* ===============================  NAVBAR FOR BIG DEVICES ============================= */
 @media screen and (min-width:768px) {
   .nav{
     background: var(--clr-primary-10);
+   
+    height: 6rem;
+  
   }
   .nav-btn{
     display: none;
@@ -249,23 +275,25 @@ Navbar
   }
   .nav-center{
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
   }
 
+  .nav-logo{
+    justify-self: start;
+    width: 20rem;
+  
+   
+  }
   
 }
-/* fixed navbar */
-.navbar-fixed{
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  background: var(--clr-white);
-  z-index: 2;
-  box-shadow: var(--light-shadow);
-}
+/* -------- end of navbar in big devices ---------------- */
+
+
+
 /*
+
+
 =============== 
 Sidebar
 ===============
