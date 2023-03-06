@@ -11,7 +11,7 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("navbar-fixed");
   }
 });
-// show sidebar
+// SIDE BAR
 navBtn.addEventListener("click", function () {
   sidebar.classList.add("show-sidebar");
 });
