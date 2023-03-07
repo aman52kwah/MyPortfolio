@@ -610,6 +610,7 @@ project:hover::after{
   }
 }
 /*
+============= video container==================
 =============== 
 Connect
 ===============
@@ -625,9 +626,11 @@ Connect
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100%; 
   object-fit: cover;
+  z-index: -2;
 }
+/* ============= there will be an overlay color over the video============== */
 .connect::after{
   content:"";
   position: absolute;
@@ -636,7 +639,60 @@ Connect
   width: 100%;
   height: 100%;
   background: var(--clr-white);
-  opacity: 0.07;
+  opacity: 0.7;
+  z-index: -1;
+}
+.connect{
+  display: grid;
+  place-items: center;
+}
+.video-banner .section-title{
+  margin-bottom: 2rem;
+}
+.video-text{
+  max-width: 30rem;
+}
+.video-banner{
+  background: var(--clr-primary-10);
+  padding: 3rem 5rem 12rem 5rem;
+  text-align: center;
+  -webkit-clip-path: polygon(
+    0% 0% ,
+    100% 0%,
+    100% 75% ,
+    75% 75% ,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
+  clip-path: polygon(
+    0% 0% ,
+    100% 0%,
+    100% 75% ,
+    75% 75% ,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
+}
+
+.connect{
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 10%, 
+    100% 90%,
+     50 100%,
+     0% 90%, 
+    0% 10%
+       );
+  clip-path: polygon(
+  50% 0%,
+  100% 10%, 
+  100% 90%,
+   50 100%,
+   0% 90%, 
+  0% 10%
+  );
 }
 
 /*
