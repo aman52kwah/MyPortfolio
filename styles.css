@@ -770,3 +770,60 @@ input[type="text"], textarea {
 Products Page
 ===============
 */
+.project-hero{
+  height: 40vh;
+  background: var(--clr-primary-10);
+  display: grid;
+  place-items: center;
+}
+.project-hero{
+  margin-bottom: 0;
+}
+.single-project{
+  background: var(--clr-grey-10);
+  border-radius: var(--radius);
+}
+.project-container{
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+.project-container{
+  position: relative;
+}
+.project-icon{
+  position: absolute;
+  font-size: 1.75rem;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 4rem;
+  height: 4rem;
+  display: grid;
+  place-items: center;
+  background: var(--clr-primary-5);
+  border-radius: 50%;
+  color: var(--clr-primary-1);
+  border: 0.3re,m solid var(--clr-grey-10);
+}
+.project-details{
+  padding: 2rem 1.5rem;
+}
+.project-footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: var(--clr-primary-5);
+}
+.project-footer{
+  color: var(--clr-primary-5);
+  text-transform: capitalize;
+  transition: var(--transition);
+  justify-self: end;
+}
+.project-footer a:hover {
+  color:var(--clr-primary-1)
+}
+.project-page-center{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(330px,1fr));
+  gap: 3rem 1rem;
+}
