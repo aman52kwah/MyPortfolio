@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/aman52kwah/MyPortfolio/issues"
   },
-  "homepage": "https://github.com/aman52kwah/MyPortfolio#readme"
+  "homepage": "https://github.com/aman52kwah/MyPortfolio#readme",
+  "dependencies": {
+    "myportfolio": "file:"
+  }
 }
