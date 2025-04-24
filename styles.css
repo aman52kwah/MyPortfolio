@@ -709,10 +709,41 @@ Timeline
 
 /*
 =============== 
-Blog
+ITEMS
 ===============
 */
+.item{
+  width: 100%;
+  height: 558px;
+  background: #fff;
+  border: 20px;
+  border-radius: var(--radius);
+  box-shadow:0 0 20px 10px rgba(0, 0, 0, 0.4);
+  overflow:hidden;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  z-index: 1000;
+}
+.contact{
+background: var(--clr-primary-3);
 
+.image{
+  height:320px ;
+  width: 320px;
+}
+}
+.first-text{
+text-align: center;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: 300;
+  font-size: 25px;
+  color: var(--clr-primary-4);
+  margin-top: 0px;
+}
+.submit-form{
+  background: red;
+
+}
 /*
 =============== 
 Footer
@@ -748,6 +779,7 @@ form {
   flex-direction: column;
   align-items: center;
   margin: 20px;
+  justify-content: center;
 }
 
 label {
