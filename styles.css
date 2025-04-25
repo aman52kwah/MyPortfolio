@@ -725,13 +725,15 @@ ITEMS
   z-index: 1000;
 }
 .contact{
-background: var(--clr-primary-3);
+background: url(assets/Contact-Us-Banner.svg);
+margin-top: 90;
+margin-bottom: 10;
 
-.image{
-  height:320px ;
-  width: 320px;
 }
-}
+
+
+
+
 .first-text{
 text-align: center;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -740,10 +742,10 @@ font-weight: 300;
   color: var(--clr-primary-4);
   margin-top: 0px;
 }
-.submit-form{
-  background: red;
+/* .submit-form{
+  
 
-}
+} */
 /*
 =============== 
 Footer
