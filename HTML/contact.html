@@ -103,23 +103,48 @@
         <!-- end of section title -->
         <div class="section-center page-info">
             <!-- contact form -->
-             <div class="item">
-                <div class="contact">
-                    <div class="first-text">24/7 CONTACT SUPPORT</div>
-                    
+             <div>
+         <div class="item">
+            <div class="contact">
+                <div class="first-text">
+                    Let's Get in touch
+                    <img src="/assets/Contact-Us-Banner.svg" alt="" class="image">
+                    <div class="">
+                        <span class="second-text">Connect With Us</span>
+                        <ul class="social-icons">
+                            <li><a href="https://www.linkedin.com" class=".social-icon" ><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://www.twitter.com" class=".social-icon" > <i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com" class=".social-icon" ><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.sqaurespace.com" class=".social-icon"><i class="fab fa-squarespace"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
-            <form method="POST" action="https://formspree.io/f/xjkwvnrq">
-                <label for="name">name</label>
-                <input type="text" id="name" name="name" placeholder="Name" required>
-                <br>
-
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" required placeholder="Email"><br>
-
-                <label for="message">Message</label>
-                <textarea name="message" id="message"  rows="5" placeholder="Message Here"></textarea> <br>
-                <button type="submit" class="btn"> submit</button>
+            </div>
+           <div class="submit-forms">
+            <h5 class="third-text text">Contact Us</h5>
+            <form  action="https://formspree.io/f/xjkwvnrq"
+            method="POST">
+                <div class="input-box">
+                    <input type="text" name="name" class="input" required>
+                    <label for="name">Fullname</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" class="input" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="tel" name="telephone" class="input" required>
+                    <label for="tel">Phone</label>
+                </div>
+                <div class="input-box">
+                   <textarea  id="message" name="message" required class="input message"></textarea>
+                    <label for="message">message</label>
+                </div>
+                <input type="submit" value="submit" class="submit-btn">
             </form>
+           </div>
+         </div>
+        </div>
         </div>
         </div>
     </section>
